@@ -69,7 +69,7 @@ p {
 
 #s-nav  
 {
-  background-image: url('images/soul-essential-logo.png');
+  background-image: url('../images/soul-essential-logo.png');
   background-color: var(--main-trim);
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -157,7 +157,7 @@ p {
 #s-banner-pic {
     height: 400px;
     width: 900px;
-    background-image: url("images/banner.jpg");
+    background-image: url("../images/banner.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,21 +265,21 @@ p {
 
 .pic-1
 {
-   background-image: url(images/psychodelic.jpg);
+   background-image: url(../images/psychodelic.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
 }
 .pic-2
 {
-   background-image: url(images/eric.jpeg);
+   background-image: url(../images/eric.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
 }
 .pic-3
 {
-   background-image: url(images/amy.jpeg);
+   background-image: url(../images/amy.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
