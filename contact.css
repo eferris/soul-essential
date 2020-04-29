@@ -51,3 +51,7 @@ input  {
     position: relative;
     margin: 0;
 }
+#result {
+    color: white;
+    padding-left: 20%;
+}
