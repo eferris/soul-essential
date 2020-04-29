@@ -1,0 +1,424 @@
+ 
+/* CSS for Soul Essential Site */
+
+
+
+/* Custom properties/variables  */
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #c5c5c5;
+    --dark-gray: #181818;
+    --main-trim: purple;
+    --main-comp: black;
+    font-size: 22px;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-comp);
+}
+
+
+hr {
+  display: block;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+
+
+
+h1, h2 {
+    text-align: center;
+    font-weight: 400;
+    line-height: 35px;
+    color: var(--main-white);
+  }
+
+
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 2.0rem;
+}
+h5 {
+  font-size: 1.4rem;
+  color:white;
+
+}
+p {
+  font-size: 1.0rem;
+}
+
+/* nav */
+
+#s-nav  
+{
+  background-image: url('images/soul-essential-logo.png');
+  background-color: var(--main-trim);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80%;
+  min-height: 200px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  width: 100%;
+  height: 40px;
+  background-color: var(--main-comp);
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  margin-right: 2rem;
+}
+
+.nav-list li {
+  list-style: none;
+  font-size: 1.8rem;
+  padding: 20px;
+}
+
+/* this code puts space between the list items */
+.nav-list a {
+  display: block;
+  font-size: 1.2rem;
+  padding: 0 0 0 2rem;
+  color: var(--main-white);
+  transition: transform .2s;
+}
+
+.nav-list a:hover {
+  text-shadow: -25px 15px 15px silver;
+  list-style: none;
+  text-decoration: none;
+  transform: scale(1.5);
+}
+
+#s-banner
+{
+    display: flex;
+    height: 500px; /* You must set a specified height */
+    border: solid 110px black;
+}
+
+#s-banner button {
+   padding: 10px;
+   background-color: black;
+   color: white;
+   border-radius: 10%;
+}
+
+#s-banner img {
+  display: block;
+  max-width:550px;
+  max-height:400px;
+  width: auto;
+  height: auto;
+}
+
+#s-banner-txt {
+    padding: 30px;
+    color: var(--main-white);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#s-banner-pic {
+    height: 400px;
+    width: 900px;
+    background-image: url("images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#s-social
+{
+    display: flex;
+    background: black;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+#s-carousel {
+    display: flex;
+    justify-content: center;
+    background: black;
+    width: 100%;
+    height: 400px;
+    margin: 40px;
+}
+
+#carouselSoul {
+    width: 50vw;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+.s-about
+{
+    display: grid;
+    grid-gap: 50px;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+    background-color: black;
+    width: 100vw;
+    color: black;
+    margin: 60px 0px;
+}
+.s-about-txt
+{
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    height: 400px;
+    width: 50vw;
+    /* margin:5px; */
+}
+.s-about-pic
+{
+    background: white;
+    width: 50vw;
+    height: 400px;
+}
+
+.txt-1
+{
+   padding: 100px;
+}
+
+.txt-2
+{
+   padding: 75px;
+}
+
+.txt-3
+{
+   padding: 75px;
+}
+
+.pic-1
+{
+   background-image: url(images/psychodelic.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.pic-2
+{
+   background-image: url(images/eric.jpeg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.pic-3
+{
+   background-image: url(images/amy.jpeg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+
+/*************** FOOTER ***************/
+
+.footer {
+    background: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100vw;
+}
+.footer-text {
+    font-size: .6rem;
+    color: var(--main-comp);
+    align-self: flex-end;
+}
+
+@media (max-width: 1024px)
+{
+
+  #s-banner-txt {
+    padding: 20px;
+  }
+
+  .nav-list li {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+
+  #s-carousel {
+    padding: 0px;
+  }
+  
+  h1 {
+    font-size: 2.2rem
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: .8rem;
+/*    color: yellow !important; */
+    color: white !important;
+  }
+
+  #s-banner
+  {
+      display: flex;
+      flex-direction: column;
+      height: 1000px; /* You must set a specified height */
+      border: solid 110px black;
+  }
+
+  #s-banner-pic {
+    height: 400px;
+    width: 100%;
+  }
+  
+  .s-about
+  {
+      display: grid;
+      grid-gap: 30px;
+      justify-content: space-around;
+      grid-template-columns: auto auto;
+      background-color: black;
+      width: 100vw;
+      color: black;
+  }
+}
+
+@media (max-width: 768px) 
+{
+
+.nav-list li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 10px;
+}
+ 
+  #s-banner-txt {
+    padding: 20px;
+  }
+
+
+  .nav-list li {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  
+  h1 {
+    font-size: 2.0rem;
+  }
+  h2 {
+    font-size: .9rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  p {
+    /* color:white !important; */
+    color:green !important; 
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 600px) 
+{
+
+  #s-banner-txt {
+    padding: 5px;
+  }
+
+  .nav-list li {
+    font-size: .8rem;
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: .6rem;
+  }
+  h5 {
+    font-size: 0.9rem;
+  }
+  p {
+ /*   color:white !important; */
+    color:red !important;  
+    font-size: .6rem;
+  }
+}
+

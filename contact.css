@@ -1,0 +1,53 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#s-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+input[type="button"] {
+    color: var(--main-trim);
+    margin: 50px;
+    border-radius: 5%;
+    width: 80px;
+    height: 80px;
+    right: 25%;
+    bottom: 10%;
+    position: absolute;
+}
+
+textarea {
+    background-image: url("images/amy.jpeg");
+    opacity: .4;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input  {
+    margin: 10px;
+    width: 35vw;
+}
+
+.s-contact-input {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+}
+
+#s-contact-pic {
+    max-height:700px;
+    height: 700px;
+    width: auto;
+    position: relative;
+    margin: 0;
+}

@@ -1,0 +1,66 @@
+
+hr {
+  display: block;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+
+
+.s-cal
+{
+    display: grid;
+    grid-gap: 50px;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+    background-color: black;
+    width: 100vw;
+    color: black;
+    margin: 60px 0px;
+    margin-left: 140px;
+}
+.s-cal-txt
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    height: 400px;
+    width: 50vw;
+    /* margin:5px; */
+}
+.s-cal-pic
+{
+    background: white;
+    width: 50vw;
+    height: 400px;
+    border-radius: 5px;
+}
+
+
+.calpic-1
+{
+   background-image: url('logo/hideout-logo.jpeg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.caltxt
+{
+   padding: 10px;
+}
+
+.calpic-2
+{
+   background-image: url('logo/cascade-lounge.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
