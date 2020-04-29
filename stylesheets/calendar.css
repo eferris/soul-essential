@@ -46,7 +46,7 @@ hr {
 
 .calpic-1
 {
-   background-image: url('logo/hideout-logo.jpeg');
+   background-image: url('../logo/hideout-logo.jpeg');
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -59,7 +59,7 @@ hr {
 
 .calpic-2
 {
-   background-image: url('logo/cascade-lounge.jpg');
+   background-image: url('../logo/cascade-lounge.jpg');
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
