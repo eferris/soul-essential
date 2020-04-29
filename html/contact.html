@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
+  <!--
     <script crossorigin 
         src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin 
         src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <meta charset="UTF-8">
+    -->
+        <meta charset="UTF-8">
     <meta name=viewport" content="width=device-width,initial-scale=1.0">
     -<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -16,7 +18,7 @@
    <!-- BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- BOOTSTRAP JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -31,14 +33,12 @@
 
 
     <!-- STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="soul.css">
-    <link rel="stylesheet" type="text/css" href="video.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/soul.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/contact.css">
+</head>
 
-  </head>
-
-<body>
-  <div id="s-video">
-
+<body onload="onLoadPage()">
+  <div id="s-contact">
 
     <!-- START NAV -->
 
@@ -62,43 +62,34 @@
     </div>
     <!-- END NAV -->
 
-    <!-- BEGIN VIDEO -->
+    <div id="s-contact-info">
 
-    <div id="s-video-player">
-      <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/-_AuERrQB5w" frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
-      <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/taifG6JjUZk?controls=0" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
-      <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/gJtXGN-BoOM" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
-      <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/znSyaFAU9_4" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
-      <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/NZrSy7c8658" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
-      <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/zM1_9jDd5M0" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>      
+      <form action="http:/soulessential.dance/route" onsubmit="return false;">
+
+      <div id="s-contact-hdr">
+        <h2>Thanks for Sharing your Info!</h2>
+        <h2>-- Amy V & Soul Essential --</h2>
+
+        <div id="s-contact-pic">
+            <img src="../images/amy.jpeg"/>
+  
+          <div class="s-contact-input">
+            <input placeholder="first_name" type="fname" 
+                                 id="fnameTxt" name="fname">
+            <input placeholder="last_name" type="lname" id="lnameTxt" name="lname">
+            <input placeholder="email_id" placeholder="you@mail.com" type="email" id="emailTxt" name="email">
+            <textarea id="msgTxt" name="msgTxt" cols="30" rows="3"></textarea>
+          </div>
+
+          <input type="button" id="go-user" value="Hit Me!"></input>
+
+        </div>
+      </div>
+
+      </form>
     </div>
 
-    <!-- END VIDEO -->
-
-    <!-- BEGIN SOCIAL -->
+    <div id="result"></div>
 
     <div id="s-social">
        <!-- Add font awesome icons -->
@@ -109,17 +100,22 @@
        <a href="https://www.instagram.com/soulessential.music/" 
            target="_blank" class="fa fa-instagram"></a>
     </div>
-
-  <!-- START FOOTER  -->
+    <!-- START FOOTER  -->
     <div class="footer">
       <p class="footer-text" style="margin:0">
         <span
           >Copyright © 2020 Red Haired Lion Inc - All Rights Reserved.</span
         >
       </p>
+
     </div>
   </div>
+
   <!-- END FOOTER  -->
+
+  <!-- Script -->
+  <script type="text/javascript" src="contact.js"></script>
+
 </body>
 
 
