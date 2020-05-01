@@ -24,7 +24,6 @@ input[type="button"] {
 }
 
 textarea {
-    background-image: url("../images/amy.jpeg");
     opacity: .4;
     color: white;
     background-repeat: no-repeat;
