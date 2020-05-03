@@ -42,100 +42,75 @@ hr {
 
 
 
-h1, h2 {
-  text-align: center;
-  font-weight: 400;
-  line-height: 35px;
-  color: var(--main-white);
+h1, h2, h3, h4, h5, h6 {
+  color: white;
 }
 
-
-h1 {
-  font-size: 2.6rem;
-}
-h2 {
-  font-size: 2.0rem;
-}
-h5 {
-  font-size: 1.4rem;
-  color:white;
-
-}
 p {
-  font-size: 1.0rem;
+  color: white;
 }
+
+header {
+  background-color: white;
+  width: 100%;
+}
+
+header img {
+  width: 70%;
+  margin: 0 auto;
+}
+
 
 /* nav */
 
-#s-nav  
+nav  
 {
-  /* background-image: url('../images/soul-essential-logo.png'); */
-  background-color: var(--main-comp);
-  /* background-position: bottom right; */
-  /* background-repeat: no-repeat; */
-  /* background-size: contain; */
   width: 100%;
-  min-height: 80px;
-  box-sizing: border-box;
-  margin: auto;
-}
-
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  /* opacity: 0.8; */
-  width: 100%;
-  height: 60px;
-  background-color: var(--main-comp);
-  /* box-sizing: border-box; */
-  z-index: 10;
 }
 
 .nav-list {
   display: flex;
-  flex-direction: row;
-  /* margin-right: 2rem; */
+  justify-content: space-between;
+  margin: 0;
 }
 
 .nav-list li {
   list-style: none;
   font-size: 2rem;
-  /* padding: 20px; */
+}
+
+.nav-list li a {
+  color: black;
+
 }
 
 /* this code puts space between the list items */
 .nav-list a {
   display: block;
   font-size: 1.2rem;
-  padding: 0 0 0 2rem;
   color: var(--main-white);
   transition: transform .2s;
 }
 
 .nav-list a:hover {
-  /* text-shadow: -25px 15px 15px silver; */
   list-style: none;
   text-decoration: none;
   transform: scale(1.1);
 }
 
-#s-banner {
+#about {
   display: flex;
   height: 500px; /* You must set a specified height */
 }
 
-#s-banner button {
+#about button {
   padding: 10px;
   background-color: black;
   color: white;
   border-radius: 4px;
 }
 
-#s-banner img {
+#about img {
   display: block;
   max-width:550px;
   max-height:400px;
@@ -143,7 +118,7 @@ p {
   height: auto;
 }
 
-#s-banner-txt {
+#about-txt {
   padding: 30px;
   color: var(--main-white);
   justify-content: center;
@@ -152,7 +127,7 @@ p {
   width: 100%;
 }
 
-#s-banner-pic {
+#about-pic {
   height: 400px;
   width: 900px;
   background-image: url("../images/banner.jpg");
@@ -195,25 +170,6 @@ p {
 .fa-instagram {
   background: #125688;
   color: white;
-}
-
-#s-carousel {
-  display: flex;
-  justify-content: center;
-  background: black;
-  width: 100%;
-  height: 400px;
-  margin: 40px;
-}
-
-#carouselSoul {
-  width: 50vw;
-}
-
-.carousel-img {
-  width: 100%;
-  height: 400px;
-  background-size: cover;
 }
 
 .s-about {
@@ -261,7 +217,7 @@ p {
 @media (max-width: 1024px)
 {
 
-  #s-banner-txt {
+  #about-txt {
     padding: 20px;
   }
 
@@ -290,14 +246,14 @@ p {
     color: white !important;
   }
 
-  #s-banner {
+  #about {
     display: flex;
     flex-direction: column;
     height: 1000px; /* You must set a specified height */
     border: solid 110px black;
   }
 
-  #s-banner-pic {
+  #about-pic {
     height: 400px;
     width: 100%;
   }
@@ -322,7 +278,7 @@ p {
   padding: 10px;
 }
  
-  #s-banner-txt {
+  #about-txt {
     padding: 20px;
   }
 
@@ -352,7 +308,7 @@ p {
 @media (max-width: 600px) 
 {
 
-  #s-banner-txt {
+  #about-txt {
     padding: 5px;
   }
 
