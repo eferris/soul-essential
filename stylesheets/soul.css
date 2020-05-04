@@ -171,8 +171,11 @@ nav {
 }
 
 .calendar-shows {
+  border: 1px solid blue;
   list-style: none;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .calendar-shows li:not(:last-child) {
@@ -180,6 +183,7 @@ nav {
 }
 
 .calendar-shows li {
+  width: 80%;
   background: white;
   border-radius: 4px;
   padding: 8px;
