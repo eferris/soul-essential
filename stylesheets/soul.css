@@ -1,58 +1,61 @@
- 
-/* CSS for Soul Essential Site */
+/***************************/
+/********* GENERAL **********/
+/***************************/
 
-
-
-/* Custom properties/variables  */
 :root {
-    --main-white: #f0f0f0;
-    --main-red: #be3144;
-    --main-blue: #45567d;
-    --main-gray: #c5c5c5;
-    --dark-gray: #181818;
-    --main-trim: purple;
-    --main-comp: rgb(20, 20, 20);
-    font-size: 22px;
-  }
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #c5c5c5;
+  --dark-gray: #181818;
+  --main-trim: purple;
+  --main-comp: rgb(20, 20, 20);
+  font-size: 22px;
+}
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--main-comp);
+  background-color: black;
 }
 
-
-hr {
-  display: block;
-  margin-top: 3em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-}
-
-
-
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: white;
+  margin: 0;
 }
 
 p {
   color: white;
+  margin: 0;
 }
+
+section {
+  padding: 48px;
+  width: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 0 64px 0;
+  border: 1px solid yellow;
+}
+
+/***************************/
+/********* HEADER **********/
+/***************************/
 
 header {
   background-color: white;
-  width: 100%;
+  /* width: 100%; */
+  border: 1px solid red;
 }
 
 header img {
@@ -60,12 +63,12 @@ header img {
   margin: 0 auto;
 }
 
+/***************************/
+/********** NAV ************/
+/***************************/
 
-/* nav */
-
-nav  
-{
-  width: 100%;
+nav {
+  /* width: 100%; */
 }
 
 .nav-list {
@@ -81,7 +84,6 @@ nav
 
 .nav-list li a {
   color: black;
-
 }
 
 /* this code puts space between the list items */
@@ -89,7 +91,7 @@ nav
   display: block;
   font-size: 1.2rem;
   color: var(--main-white);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .nav-list a:hover {
@@ -98,50 +100,130 @@ nav
   transform: scale(1.1);
 }
 
+/***************************/
+/********* BANNER **********/
+/***************************/
+
+.banner {
+  border: 1px solid green;
+  /* width: 100%; */
+}
+
+.banner-text {
+  position: absolute;
+  z-index: 1;
+}
+
+#carousel-slides {
+  position: relative;
+}
+
+/***************************/
+/********* ABOUT ***********/
+/***************************/
+
 #about {
   display: flex;
-  height: 500px; /* You must set a specified height */
+  flex-direction: column;
+  border: 1px solid blue;
 }
 
-#about button {
-  padding: 10px;
-  background-color: black;
-  color: white;
-  border-radius: 4px;
+.about-section img {
+  object-fit: cover;
+  width: 50%;
 }
 
-#about img {
-  display: block;
-  max-width:550px;
-  max-height:400px;
-  width: auto;
-  height: auto;
+.about-text {
+  padding: 24px;
 }
 
-#about-txt {
-  padding: 30px;
-  color: var(--main-white);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-}
-
-#about-pic {
-  height: 400px;
-  width: 900px;
-  background-image: url("../images/banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
-
-#s-social {
+.about-section {
   display: flex;
-  height: 150px;
+}
+
+.about-container {
+  height: 400px;
+}
+
+/* .about-container > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+
+.about-text {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px 0px;
+}
+
+.about-text > p {
+  color: white;
+}
+
+/***************************/
+/******** CALENDAR *********/
+/***************************/
+
+#calendar {
+  border: 1px solid purple;
+}
+
+.calendar-shows {
+  list-style: none;
+  margin: 0;
+}
+
+.calendar-shows li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.calendar-shows li {
+  background: white;
+  border-radius: 4px;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+}
+
+.calendar-shows li div {
+  border: 1px solid brown;
+}
+
+.show-venue {
+  flex-basis: 40%;
+  font-size: 1.4em;
+}
+
+.show-venue h5 {
+  color: black;
+}
+
+.calendar-shows p {
+  color: grey;
+}
+
+/***************************/
+/********** MEDIA **********/
+/***************************/
+
+#media {
+  border: 1px solid green;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 48px;
+}
+
+/***************************/
+/********* CONTACT *********/
+/***************************/
+
+#contact {
+  border: 1px solid green;
 }
 
 .fa {
@@ -158,7 +240,7 @@ nav
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
@@ -172,51 +254,31 @@ nav
   color: white;
 }
 
-.s-about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-around;
-}
+/***************************/
+/********* FOOTER **********/
+/***************************/
 
-.about-container {
-  height: 400px;
-}
-
-.about-container > img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.about-text {
+footer {
+  background: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* width: 100%; */
+  padding: 20px 0;
+  margin-top: 48px;
 }
 
-.about-text > p {
-  color: white;
+footer p {
+  font-size: 0.7rem;
+  color: black;
 }
 
-/*************** FOOTER ***************/
+/***************************/
+/***************************/
+/******* BREAKPOINTS *******/
+/***************************/
+/***************************/
 
-.footer {
-  background: purple;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 100vw;
-}
-.footer-text {
-  font-size: .6rem;
-  color: var(--main-comp);
-  align-self: flex-end;
-}
-
-@media (max-width: 1024px)
-{
-
+@media (max-width: 1024px) {
   #about-txt {
     padding: 20px;
   }
@@ -229,9 +291,9 @@ nav
   #s-carousel {
     padding: 0px;
   }
-  
+
   h1 {
-    font-size: 2.2rem
+    font-size: 2.2rem;
   }
   h2 {
     font-size: 1.1rem;
@@ -241,8 +303,8 @@ nav
     font-size: 1.4rem;
   }
   p {
-    font-size: .8rem;
-/*    color: yellow !important; */
+    font-size: 0.8rem;
+    /*    color: yellow !important; */
     color: white !important;
   }
 
@@ -257,7 +319,7 @@ nav
     height: 400px;
     width: 100%;
   }
-  
+
   .s-about {
     display: grid;
     grid-gap: 30px;
@@ -269,51 +331,45 @@ nav
   }
 }
 
-@media (max-width: 768px) 
-{
+@media (max-width: 768px) {
+  .nav-list li {
+    list-style: none;
+    font-size: 1rem;
+    padding: 10px;
+  }
 
-.nav-list li {
-  list-style: none;
-  font-size: 1rem;
-  padding: 10px;
-}
- 
   #about-txt {
     padding: 20px;
   }
-
 
   .nav-list li {
     font-size: 1rem;
     padding: 10px;
   }
 
-  
   h1 {
-    font-size: 2.0rem;
+    font-size: 2rem;
   }
   h2 {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   h5 {
     font-size: 1.1rem;
   }
   p {
     /* color:white !important; */
-    color:green !important; 
-    font-size: .8rem;
+    color: green !important;
+    font-size: 0.8rem;
   }
 }
 
-@media (max-width: 600px) 
-{
-
+@media (max-width: 600px) {
   #about-txt {
     padding: 5px;
   }
 
   .nav-list li {
-    font-size: .8rem;
+    font-size: 0.8rem;
     padding: 5px;
   }
 
@@ -321,15 +377,14 @@ nav
     font-size: 1.8rem;
   }
   h2 {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
   h5 {
     font-size: 0.9rem;
   }
   p {
- /*   color:white !important; */
-    color:red !important;  
-    font-size: .6rem;
+    /*   color:white !important; */
+    color: red !important;
+    font-size: 0.6rem;
   }
 }
-

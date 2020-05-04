@@ -50,26 +50,27 @@
     <nav>
       <ul class="nav-list">
         <li>
-          <a href="index.html">home</a>
+          <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="html/calendar.html">calendar</a>
+          <a href="#calendar">Calendar</a>
         </li>
         <li>
-          <a href="html/video.html">video</a>
+          <a href="#media">Media</a>
         </li>
         <li>
-          <a href="html/contact.html">contact</a>
+          <a href="html/contact.html">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <!-- BANNER -->
-  <h2>Essential Classics in the Pocket</h2>
-  <button>Book Now</button>
-  <!-- CAROUSEL -->
-  <div class="my-carousel-container">
+  <div class="banner">
+    <div class="banner-text">
+      <h2>Essential Classics in the Pocket</h2>
+      <button>Book Now</button>
+    </div>
     <!-- BOOTSTRAP CAROUSEL -->
     <div id="carousel-slides" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -88,62 +89,140 @@
 
   <!-- ABOUT -->
   <section id="about">
-    <h3>Danceable Classic Soul, R&B, Funk & Blues</h3>
-    <div id="about-txt">
-      <p>Need a Master of Ceremonies to make your event go smoothly? We offer an integrated DJ and other entertainment
-        services to tie your night together for your guests with a touch of style.</p>
-      <p>Planning an event? We play Venues, Weddings, Corporate Events and Festivals.</p>
-      <p>We ensure that your musical event will be stress-free and well-organized. So sit back, relax and leave this to
-        us!</p>
+    <h3 class="section-header">Danceable Classic Soul, R&B, Funk & Blues</h3>
+    <p>Need a Master of Ceremonies to make your event go smoothly? We offer an integrated DJ and other entertainment
+      services to tie your night together for your guests with a touch of style.</p>
+    <div class="about-section">
+      <img src="images/amy.jpeg" alt="">
+      <div class="about-text">
+        <p>Planning an event? We play Venues, Weddings, Corporate Events and Festivals.</p>
+        <p>We ensure that your musical event will be stress-free and well-organized. So sit back, relax and leave this
+          to us!</p>
+      </div>
     </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section id="calendar">
+    <h3 class="section-header">Upcoming Shows</h3>
+
+    <ul class="calendar-shows">
+      <li>
+        <div class="show-venue">
+          <a href="#">
+            <h5>Hideout Saloon East</h5>
+          </a>
+        </div>
+        <div class="show-address">
+          <a href="#">
+            <p>1110 S Sherwood Village Dr <br />
+              Tucson, AZ 85710</p>
+          </a>
+        </div>
+        <div class="show-schedule">
+          <p>Saturday, April 4th <br />
+            9:00pm - 1:00am</p>
+        </div>
+      </li>
+      <li>
+        <div class="show-venue">
+          <a href="#">
+            <h5>Lowes Ventana Canyon Cascade Lounge</h5>
+          </a>
+        </div>
+        <div class="show-address">
+          <a href="#">
+            <p>7000 N. Resort Dr #220 <br />
+              Tucson, AZ 85750</p>
+          </a>
+        </div>
+        <div class="show-schedule">
+          <p>Saturday, April 11th <br />
+            8:30pm - 11:30pm</p>
+        </div>
+      </li>
+      <li>
+        <div class="show-venue">
+          <a href="#">
+            <h5>Hideout Saloon East</h5>
+          </a>
+        </div>
+        <div class="show-address">
+          <a href="#">
+            <p>1110 S Sherwood Village Dr <br />
+              Tucson, AZ 85710</p>
+          </a>
+        </div>
+        <div class="show-schedule">
+          <p>Saturday, May 16th <br />
+            9:00pm - 1:00am</p>
+        </div>
+      </li>
+      <li>
+        <div class="show-venue">
+          <a href="#">
+            <h5>Hideout Saloon East</h5>
+          </a>
+        </div>
+        <div class="show-address">
+          <a href="#">
+            <p>1110 S Sherwood Village <br />
+              Dr Tucson, AZ 85710</p>
+          </a>
+        </div>
+        <div class="show-schedule">
+          <p>Saturday, June 20th <br />
+            9:00pm - 1:00am</p>
+        </div>
+      </li>
+    </ul>
   </section>
 
   <!-- MEDIA -- VIDEOS AND PHOTOS -->
   <section id="media">
-    <h3>Check us out!</h3>
+    <h3 class="section-header">Check us out!</h3>
     <!-- VIDEOS -->
-
+    <div class="videos">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-_AuERrQB5w" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/taifG6JjUZk?controls=0" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gJtXGN-BoOM" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/znSyaFAU9_4" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/NZrSy7c8658" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/zM1_9jDd5M0" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
     <!-- PHOTOS -->
+    <!-- TODO -->
   </section>
 
-<!-- CALENDAR -->
-<section id="calendar">
-  <h3>Upcoming Shows</h3>
-  <div class="calendar-show">
-
-  </div>
-  <div class="calendar-show">
-
-  </div>
-  <div class="calendar-show">
-
-  </div>
-  <div class="calendar-show">
-
-  </div>
-
-</section>
-
-<!-- CONTACT -->
-  <div id="contact">
+  <!-- CONTACT -->
+  <section id="contact">
+    <h3 class="section-header">Hit Me!</h3>
     <h5>Subscribe to our YouTube Channel!</h5>
     <h5>Call +1.520.977.1708</h5>
     <!-- Add font awesome icons -->
     <a href="https://www.facebook.com/SoulEssentialMusic/" target="_blank" class="fa fa-facebook"></a>
     <a href="https://www.youtube.com/c/soul-essential/" target="_blank" class="fa fa-youtube"></a>
     <a href="https://www.instagram.com/soulessential.music/" target="_blank" class="fa fa-instagram"></a>
-  </div>
+  </section>
 
-
-  <!-- START FOOTER  -->
-  <div class="section">
-    <div class="footer">
-      <p class="footer-text" style="margin: 0;">
-        <span>Copyright © 2020 Red Haired Lion Inc - All Rights Reserved.</span>
-      </p>
-    </div>
-  </div>
-  <!-- END FOOTER  -->
+  <!-- FOOTER  -->
+  <footer>
+    <p>
+      <span>Copyright © 2020 Red Haired Lion Inc - All Rights Reserved.</span>
+    </p>
+  </footer>
 
   <!-- <script src="javascript/carousel.js" defer>
       </script> -->
