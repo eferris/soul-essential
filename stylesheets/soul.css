@@ -38,7 +38,7 @@ p {
 }
 
 section {
-  padding: 48px;
+  padding: 48px 160px;
   width: 100%;
 }
 
@@ -113,8 +113,8 @@ nav {
 .banner-text {
   position: absolute;
   z-index: 1;
-  top: 40px;
-  left: 40px;
+  top: 15%;
+  left: 15%;
 }
 
 #carousel-slides {
@@ -186,7 +186,7 @@ nav {
 }
 
 .calendar-shows li {
-  width: 80%;
+  width: 90%;
   background: white;
   border-radius: 4px;
   padding: 8px;
