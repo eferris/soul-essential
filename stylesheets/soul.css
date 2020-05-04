@@ -60,7 +60,7 @@ header {
 
 header img {
   width: 70%;
-  margin: 0 auto;
+  align-self: center;
 }
 
 /***************************/
@@ -107,15 +107,18 @@ nav {
 .banner {
   border: 1px solid green;
   /* width: 100%; */
+  position: relative;
 }
 
 .banner-text {
   position: absolute;
   z-index: 1;
+  top: 40px;
+  left: 40px;
 }
 
 #carousel-slides {
-  position: relative;
+  /* position: relative; */
 }
 
 /***************************/
