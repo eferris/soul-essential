@@ -82,14 +82,10 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 0;
-}
-
-.nav-list li {
   list-style: none;
-  font-size: 2rem;
 }
 
-.nav-list li a {
+.nav-list li p {
   color: black;
 }
 
@@ -97,8 +93,7 @@ nav {
 .nav-list a {
   display: block;
   font-size: 1.2rem;
-  /* color: var(--main-white); */
-  transition: transform 0.2s;
+  transition: transform 0.1s;
 }
 
 .nav-list a:hover {
