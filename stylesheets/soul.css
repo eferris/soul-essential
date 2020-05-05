@@ -124,10 +124,6 @@ nav a:hover {
   left: 15%;
 }
 
-.banner button:hover {
-  background: lightgrey;
-}
-
 /***************************/
 /********* ABOUT ***********/
 /***************************/
@@ -135,6 +131,7 @@ nav a:hover {
 #about {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: 1px solid blue;
 }
 
@@ -155,13 +152,22 @@ nav a:hover {
   align-items: center;
 }
 
+#about p {
+  margin-bottom: 40px;
+}
+
 #about button {
+  margin-top: 48px;
   border: none;
   background: white;
   color: black;
   padding: 8px 24px;
   border-radius: 4px;
   transition: all 0.05s ease-in-out;
+}
+
+#about button:hover {
+  background: lightgrey;
 }
 
 /***************************/
