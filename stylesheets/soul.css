@@ -54,12 +54,16 @@ section {
 
 header {
   background-color: white;
-  /* width: 100%; */
+  padding: 32px 15%;
   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header img {
-  width: 70%;
+  width: 100%;
   align-self: center;
 }
 
@@ -68,7 +72,8 @@ header img {
 /***************************/
 
 nav {
-  /* width: 100%; */
+  border: 1px solid purple;
+  width: 90%;
 }
 
 .nav-list {
@@ -115,10 +120,6 @@ nav {
   z-index: 1;
   top: 15%;
   left: 15%;
-}
-
-#carousel-slides {
-  /* position: relative; */
 }
 
 /***************************/
@@ -227,7 +228,6 @@ nav {
 }
 
 .iframe-container {
-  overflow: hidden;
   padding-top: 56.25%;
   position: relative;
 }
