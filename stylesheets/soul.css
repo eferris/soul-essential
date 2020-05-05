@@ -57,7 +57,6 @@ section {
 header {
   background-color: white;
   padding: 32px 15%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,30 +73,26 @@ header img {
 /***************************/
 
 nav {
-  border: 1px solid purple;
   width: 90%;
 }
 
-.nav-list {
+nav ul {
   display: flex;
   justify-content: space-between;
   margin: 0;
   list-style: none;
 }
 
-.nav-list li p {
+nav p {
   color: black;
 }
 
-/* this code puts space between the list items */
-.nav-list a {
-  display: block;
-  font-size: 1.2rem;
-  transition: transform 0.1s;
+nav a {
+  font-size: 1rem;
+  transition: transform 0.1s ease-in-out;
 }
 
-.nav-list a:hover {
-  list-style: none;
+nav a:hover {
   text-decoration: none;
   transform: scale(1.1);
 }
@@ -189,11 +184,29 @@ nav {
   border-radius: 4px;
   padding: 8px;
   display: grid;
-  grid-template-columns: 3fr 2fr 2fr;
+  grid-template-columns: 2fr 3fr 1fr;
 }
 
 .calendar-shows li div {
   border: 1px solid brown;
+  display: flex;
+  align-items: center;
+}
+
+.show-schedule {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-schedule h6 {
+  color: black;
+  margin-right: auto;
+}
+
+.show-schedule p {
+  color: black;
+  margin-right: auto;
+  font-size: 0.8em;
 }
 
 .show-venue {
@@ -201,12 +214,8 @@ nav {
   font-size: 1.4em;
 }
 
-.show-venue h5 {
+.show-venue h6 {
   color: black;
-}
-
-.calendar-shows p {
-  color: grey;
 }
 
 /***************************/
