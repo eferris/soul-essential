@@ -331,7 +331,6 @@ nav a:hover {
 }
 
 #contact form {
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,25 +347,29 @@ nav a:hover {
 
 #contact .form-section input {
   width: 100%;
-  /* height: 100%; */
   margin: 0 8px 12px 8px;
 }
 
 #contact .form-section textarea {
   width: 100%;
-  /* height: 100%; */
   margin: 0 8px 24px 8px;
 }
 
-.social-media {
-  border: 1px solid red;
+.phone-num {
+  margin: 12px 0 24px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.phone-num h5 {
+  margin-top: 12px;
+}
+
 .social-icons {
-  border: 1px solid green;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .fa {
