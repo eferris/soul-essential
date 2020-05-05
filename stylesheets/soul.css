@@ -48,6 +48,7 @@ section {
   text-align: center;
   margin: 0 0 64px 0;
   border: 1px solid yellow;
+  letter-spacing: 0.04em;
 }
 
 /***************************/
@@ -197,7 +198,7 @@ nav a:hover {
   width: 90%;
   background: white;
   border-radius: 4px;
-  padding: 8px;
+  padding: 12px 24px;
   display: grid;
   grid-template-columns: 2fr 3fr 1fr;
   grid-gap: 16px;
