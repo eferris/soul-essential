@@ -110,7 +110,7 @@ nav a:hover {
   width: 100%;
   position: absolute;
   height: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.65));
+  background: linear-gradient(45deg, rgba(68, 30, 71, 0.6), rgba(71, 26, 75, 0.8));
   z-index: 1;
 }
 
@@ -178,7 +178,7 @@ nav a:hover {
 /***************************/
 
 #calendar {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1535587566541-97121a128dc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+  background-image: linear-gradient(45deg, rgba(68, 30, 71, 0.6), rgba(71, 26, 75, 0.8)), url("https://images.unsplash.com/photo-1535587566541-97121a128dc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
   background-size: cover;
 }
 
@@ -293,7 +293,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1555201441-7b166836415d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
+  background-image: linear-gradient(45deg, rgba(68, 30, 71, 0.6), rgba(71, 26, 75, 0.8)), url("https://images.unsplash.com/photo-1555201441-7b166836415d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
   background-size: cover;
   background-position: center;
 }
