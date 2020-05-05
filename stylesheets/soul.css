@@ -109,20 +109,19 @@ nav a:hover {
   position: relative;
 }
 
-.banner-text {
+.banner-gradient {
+  width: 100%;
   position: absolute;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.6));
   z-index: 1;
-  top: 15%;
-  left: 15%;
 }
 
-.banner button {
-  border: none;
-  background: white;
-  color: black;
-  padding: 8px 24px;
-  border-radius: 4px;
-  transition: all 0.05s ease-in-out;
+.banner-text {
+  position: absolute;
+  z-index: 2;
+  top: 15%;
+  left: 15%;
 }
 
 .banner button:hover {
@@ -144,33 +143,25 @@ nav a:hover {
   width: 50%;
 }
 
-.about-text {
-  padding: 24px;
-}
-
 .about-section {
   display: flex;
 }
 
-.about-container {
-  height: 400px;
-}
-
-/* .about-container > img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-} */
-
 .about-text {
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.about-text > p {
-  color: white;
+#about button {
+  border: none;
+  background: white;
+  color: black;
+  padding: 8px 24px;
+  border-radius: 4px;
+  transition: all 0.05s ease-in-out;
 }
 
 /***************************/
