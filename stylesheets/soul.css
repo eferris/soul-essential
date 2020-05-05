@@ -223,6 +223,20 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 48px;
+  border: 1px solid green;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   left: 0;
+   position: absolute;
+   top: 0;
 }
 
 /***************************/
