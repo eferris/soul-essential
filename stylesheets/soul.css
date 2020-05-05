@@ -164,14 +164,12 @@ nav a:hover {
 /***************************/
 
 #calendar {
-  border: 1px solid purple;
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1535587566541-97121a128dc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
   background-size: cover;
 }
 
 .calendar-shows {
   margin: 0;
-  border: 1px solid blue;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -189,10 +187,10 @@ nav a:hover {
   padding: 8px;
   display: grid;
   grid-template-columns: 2fr 3fr 1fr;
+  grid-gap: 16px;
 }
 
 .calendar-shows li div {
-  border: 1px solid brown;
   display: flex;
   align-items: center;
 }
@@ -205,6 +203,7 @@ nav a:hover {
 .show-schedule h6 {
   color: black;
   margin-right: auto;
+  font-size: 0.9em;
 }
 
 .show-schedule p {
@@ -247,20 +246,22 @@ nav a:hover {
 /********** MEDIA **********/
 /***************************/
 
-#media {
-  border: 1px solid green;
-}
-
 .videos {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 48px;
-  border: 1px solid green;
+  margin-bottom: 56px;
+}
+
+#media h6 {
+  text-align: center;
+  /* TODO: turn this into a button */
 }
 
 .iframe-container {
   padding-top: 56.25%;
   position: relative;
+  border: 8px solid white;
 }
  
 .iframe-container iframe {
