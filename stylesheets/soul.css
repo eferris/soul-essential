@@ -1,267 +1,448 @@
- 
-/* CSS for Soul Essential Site */
+/***************************/
+/********* GENERAL **********/
+/***************************/
 
-
-
-/* Custom properties/variables  */
 :root {
-    --main-white: #f0f0f0;
-    --main-red: #be3144;
-    --main-blue: #45567d;
-    --main-gray: #c5c5c5;
-    --dark-gray: #181818;
-    --main-trim: purple;
-    --main-comp: rgb(20, 20, 20);
-    font-size: 22px;
-  }
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #c5c5c5;
+  --dark-gray: #181818;
+  --main-trim: purple;
+  --main-comp: rgb(20, 20, 20);
+  font-size: 22px;
+}
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--main-comp);
-}
-
-
-hr {
-  display: block;
-  margin-top: 3em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-}
-
-
-
-
-h1, h2 {
-  text-align: center;
-  font-weight: 400;
-  line-height: 35px;
-  color: var(--main-white);
-}
-
-
-h1 {
-  font-size: 2.6rem;
-}
-h2 {
-  font-size: 2.0rem;
-}
-h5 {
-  font-size: 1.4rem;
-  color:white;
-
-}
-p {
-  font-size: 1.0rem;
-}
-
-/* nav */
-
-#s-nav  
-{
-  background-image: url('../images/soul-essential-logo.png');
-  background-color: var(--main-trim);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 80%;
-  min-height: 200px;
-  box-sizing: border-box;
-  margin: auto;
-}
-
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.8;
-  width: 100%;
-  height: 40px;
-  background-color: var(--main-comp);
-  box-sizing: border-box;
-  z-index: 10;
-}
-
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  margin-right: 2rem;
-}
-
-.nav-list li {
-  list-style: none;
-  font-size: 1.8rem;
-  padding: 20px;
-}
-
-/* this code puts space between the list items */
-.nav-list a {
-  display: block;
-  font-size: 1.2rem;
-  padding: 0 0 0 2rem;
-  color: var(--main-white);
-  transition: transform .2s;
-}
-
-.nav-list a:hover {
-  text-shadow: -25px 15px 15px silver;
-  list-style: none;
-  text-decoration: none;
-  transform: scale(1.5);
-}
-
-#s-banner {
-  display: flex;
-  height: 500px; /* You must set a specified height */
-}
-
-#s-banner button {
-  padding: 10px;
   background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Jost", sans-serif;
   color: white;
+}
+
+p {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+section {
+  padding: 64px 160px;
+  width: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+  letter-spacing: 0.04em;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.btn-soul-light-lg {
+  border: none;
+  background: white;
+  color: black;
   border-radius: 4px;
+  padding: 8px 24px;
 }
 
-#s-banner img {
-  display: block;
-  max-width:550px;
-  max-height:400px;
-  width: auto;
-  height: auto;
+.btn-soul-light-lg:hover {
+  background: lightgrey;
 }
 
-#s-banner-txt {
-  padding: 30px;
-  color: var(--main-white);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-}
-
-#s-banner-pic {
-  height: 400px;
-  width: 900px;
-  background-image: url("../images/banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
-
-#s-social {
-  display: flex;
-  height: 150px;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 0px;
-}
-
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-#s-carousel {
-  display: flex;
-  justify-content: center;
+.btn-soul-dark {
+  border: none;
+  border-radius: 4px;
   background: black;
+  color: white;
+  font-size: 0.75em;
+  padding: 4px 12px;
+  transition: all 0.05s ease-in-out;
+}
+
+.btn-soul-dark:hover {
+  background: lightgrey;
+  color: black;
+}
+
+.btn-soul-dark-lg {
+  border: none;
+  border-radius: 4px;
+  background: black;
+  color: white;
+  padding: 8px 24px;
+  transition: all 0.05s ease-in-out;
+}
+
+.btn-soul-dark-lg:hover {
+  background: lightgrey;
+  color: black;
+}
+
+/***************************/
+/********* HEADER **********/
+/***************************/
+
+header {
+  background-color: white;
+  padding: 32px 15% 24px 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
   width: 100%;
-  height: 400px;
-  margin: 40px;
+  align-self: center;
+  margin-bottom: 16px;
 }
 
-#carouselSoul {
-  width: 50vw;
+/***************************/
+/********** NAV ************/
+/***************************/
+
+nav {
+  width: 90%;
 }
 
-.carousel-img {
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  list-style: none;
+}
+
+nav a {
+  font-size: 1rem;
+  color: black;
+  transition: all 0.1s ease-in-out;
+}
+
+nav a:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  color: grey;
+}
+
+/***************************/
+/********* BANNER **********/
+/***************************/
+
+.banner {
+  position: relative;
+}
+
+.banner-gradient {
   width: 100%;
-  height: 400px;
-  background-size: cover;
-}
-
-.s-about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-around;
-}
-
-.about-container {
-  height: 400px;
-}
-
-.about-container > img {
+  position: absolute;
   height: 100%;
+  background: linear-gradient(
+      45deg,
+      rgba(68, 30, 71, 0.85),
+      rgba(71, 26, 75, 0.7)
+    ),
+    linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.2)
+    );
+  z-index: 1;
+}
+
+.banner-text {
+  position: absolute;
+  z-index: 2;
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.banner-text h2 {
+  font-size: 3em;
+  margin: 0 auto;
+}
+
+/***************************/
+/********* ABOUT ***********/
+/***************************/
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section img {
   object-fit: cover;
+  width: 50%;
+}
+
+.about-section {
+  display: flex;
 }
 
 .about-text {
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.about-text > p {
+#about p {
+  margin-bottom: 40px;
+}
+
+#about button {
+  margin-top: 48px;
+}
+
+/***************************/
+/******** CALENDAR *********/
+/***************************/
+
+#calendar {
+  background-image: linear-gradient(
+      45deg,
+      rgba(68, 30, 71, 0.6),
+      rgba(71, 26, 75, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1535587566541-97121a128dc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+  background-size: cover;
+}
+
+.calendar-shows {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-shows li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.calendar-shows li {
+  width: 90%;
+  background: white;
+  border-radius: 4px;
+  padding: 12px 24px;
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-gap: 16px;
+}
+
+.calendar-shows li div {
+  display: flex;
+  align-items: center;
+}
+
+.show-schedule {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-schedule h6 {
+  color: black;
+  margin-right: auto;
+  font-size: 0.9em;
+}
+
+.show-schedule p {
+  color: black;
+  margin-right: auto;
+  font-size: 0.8em;
+}
+
+.show-venue {
+  flex-basis: 40%;
+  font-size: 1.4em;
+}
+
+.show-venue h6 {
+  color: black;
+}
+
+.show-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/***************************/
+/********** MEDIA **********/
+/***************************/
+
+#media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 48px;
+  margin-bottom: 56px;
+  width: 100%;
+}
+
+.iframe-container {
+  padding-top: 56.25%;
+  position: relative;
+  border: 8px solid white;
+}
+
+.iframe-container iframe {
+  border: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+/***************************/
+/********* CONTACT *********/
+/***************************/
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+      45deg,
+      rgba(68, 30, 71, 0.6),
+      rgba(71, 26, 75, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1555201441-7b166836415d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact .form-section {
+  display: flex;
+}
+
+#contact form input {
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+}
+
+#contact .form-section input {
+  width: 100%;
+  margin: 0 8px 12px 8px;
+}
+
+#contact .form-section textarea {
+  width: 100%;
+  margin: 0 8px 24px 8px;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+}
+
+.phone-num {
+  margin: 12px 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-num h5 {
+  margin-top: 12px;
+}
+
+.social-icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons button {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons i {
+  font-size: 1.5em;
   color: white;
 }
 
-/*************** FOOTER ***************/
+.social-icons button.facebook {
+  background: #3b5998;
+}
 
-.footer {
-  background: purple;
+.social-icons button.youtube {
+  background: #bb0000;
+}
+
+.social-icons button.instagram {
+  background: #125688;
+}
+
+.social-icons button:hover {
+  background: darkgrey;
+}
+
+.social-icons a:hover {
+  text-decoration: none;
+}
+
+/***************************/
+/********* FOOTER **********/
+/***************************/
+
+footer {
+  background: white;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 100vw;
-}
-.footer-text {
-  font-size: .6rem;
-  color: var(--main-comp);
-  align-self: flex-end;
+  justify-content: center;
+  padding: 20px 0;
 }
 
-@media (max-width: 1024px)
-{
+footer p {
+  font-size: 0.7rem;
+  color: black;
+}
 
-  #s-banner-txt {
+/***************************/
+/***************************/
+/******* BREAKPOINTS *******/
+/***************************/
+/***************************/
+
+/* @media (max-width: 1024px) {
+  #about-txt {
     padding: 20px;
   }
 
@@ -273,9 +454,9 @@ p {
   #s-carousel {
     padding: 0px;
   }
-  
+
   h1 {
-    font-size: 2.2rem
+    font-size: 2.2rem;
   }
   h2 {
     font-size: 1.1rem;
@@ -285,23 +466,22 @@ p {
     font-size: 1.4rem;
   }
   p {
-    font-size: .8rem;
-/*    color: yellow !important; */
+    font-size: 0.8rem;
     color: white !important;
   }
 
-  #s-banner {
+  #about {
     display: flex;
     flex-direction: column;
-    height: 1000px; /* You must set a specified height */
+    height: 1000px;
     border: solid 110px black;
   }
 
-  #s-banner-pic {
+  #about-pic {
     height: 400px;
     width: 100%;
   }
-  
+
   .s-about {
     display: grid;
     grid-gap: 30px;
@@ -313,51 +493,44 @@ p {
   }
 }
 
-@media (max-width: 768px) 
-{
-
-.nav-list li {
-  list-style: none;
-  font-size: 1rem;
-  padding: 10px;
-}
- 
-  #s-banner-txt {
-    padding: 20px;
+@media (max-width: 768px) {
+  .nav-list li {
+    list-style: none;
+    font-size: 1rem;
+    padding: 10px;
   }
 
+  #about-txt {
+    padding: 20px;
+  }
 
   .nav-list li {
     font-size: 1rem;
     padding: 10px;
   }
 
-  
   h1 {
-    font-size: 2.0rem;
+    font-size: 2rem;
   }
   h2 {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   h5 {
     font-size: 1.1rem;
   }
   p {
-    /* color:white !important; */
-    color:green !important; 
-    font-size: .8rem;
+    color: green !important;
+    font-size: 0.8rem;
   }
 }
 
-@media (max-width: 600px) 
-{
-
-  #s-banner-txt {
+@media (max-width: 600px) {
+  #about-txt {
     padding: 5px;
   }
 
   .nav-list li {
-    font-size: .8rem;
+    font-size: 0.8rem;
     padding: 5px;
   }
 
@@ -365,15 +538,13 @@ p {
     font-size: 1.8rem;
   }
   h2 {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
   h5 {
     font-size: 0.9rem;
   }
   p {
- /*   color:white !important; */
-    color:red !important;  
-    font-size: .6rem;
+    color: red !important;
+    font-size: 0.6rem;
   }
-}
-
+} */
