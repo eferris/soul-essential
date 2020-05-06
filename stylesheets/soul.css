@@ -367,41 +367,45 @@ nav a:hover {
 }
 
 .social-icons {
-  width: 180px;
+  width: 200px;
   display: flex;
   justify-content: space-between;
 }
 
-.social-icons i {
-  font-size: 2em;
-}
-
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+.social-icons button {
+  height: 60px;
+  width: 60px;
+  border: none;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons i {
+  font-size: 1.5em;
   color: white;
 }
 
-.fa:hover {
-  opacity: 0.7;
-  color: white;
-}
-
-/* .fa-facebook {
+.social-icons button.facebook {
   background: #3b5998;
 }
 
-.fa-youtube {
+.social-icons button.youtube {
   background: #bb0000;
 }
 
-.fa-instagram {
+.social-icons button.instagram {
   background: #125688;
-} */
+}
+
+.social-icons button:hover {
+  background: darkgrey;
+}
+
+.social-icons a:hover {
+  text-decoration: none;
+}
 
 /***************************/
 /********* FOOTER **********/
