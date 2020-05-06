@@ -2,6 +2,7 @@ function myLogic() {
 
   /* return value set in multiple place */
   var finalMsg="";
+  var urlStr="http://localhost:5000/rout/";
 
   /* get entry field contents */
   var myFname = document.getElementById("fnameTxt")
@@ -11,15 +12,20 @@ function myLogic() {
 
   /* if all entry fields referenced succesfully */
   if ((myEmail)&& (myTArea)  && (myFname) && (myLname)) {
-    
+
+    /* get all but msg text here in the URL */
+    urlStr+=myFname.value+':';
+    urlStr+=myLname.value+':';
+    urlStr+=myEmail.value
+
     // Using the core jquery $.ajax() method
     
     $.ajax({
     
-      async: false,
+      async: true,
 
       // The URL for the request
-      url: "python/Quickstart.py",
+      url: urlStr.value,
 
       // The data to send to backend
       data: {
@@ -33,7 +39,7 @@ function myLogic() {
       type: "GET",
 
       // The type of data we expect back
-      dataType : "json",
+      dataType : "jsonp",
     })
 
     // Code to run if the request succeeds (is done);
