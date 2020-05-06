@@ -17,7 +17,7 @@ SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 EMAIL_FROM = 'salesreadyservices@gmail.com'
 EMAIL_TO = 'soulessential.music@gmail.com'
 EMAIL_SUBJECT = 'New Contact for Soul Essential!'
-EMAIL_CONTENT = 'Hello, this is a test\nSoul Essential\nhttps://soulessential.dance'
+EMAIL_CONTENT = 'eric:ferris:cosmiceducator@gmail.com'
 
 creds = None
 # The file token.pickle stores the user's access and refresh tokens, and is
@@ -47,7 +47,7 @@ message['subject'] = EMAIL_SUBJECT
 
 
 try:
-    message = (service.users().messages().send(userId='me', body={'raw': base64.urlsafe_b64encode(message.as_bytes()).decode("utf-8")})
+    message = (service_account.users().messages().send(userId='me', body={'raw': base64.urlsafe_b64encode(message.as_bytes()).decode("utf-8")})
                    .execute())
     print('Message Id: %s' % message['id'])
 except errors.HttpError as error:

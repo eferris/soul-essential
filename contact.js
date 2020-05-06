@@ -11,7 +11,7 @@ function myLogic() {
   var myTArea = document.getElementById("msgTxt")
 
   /* if all entry fields referenced succesfully */
-  if ((myEmail)&& (myTArea)  && (myFname) && (myLname)) {
+  if ((myEmail) && (myTArea)  && (myFname) && (myLname)) {
 
     /* get all but msg text here in the URL */
     urlStr+=myFname.value+':';
@@ -22,6 +22,7 @@ function myLogic() {
     
     $.ajax({
     
+
       async: true,
 
       // The URL for the request
