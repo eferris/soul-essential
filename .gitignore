@@ -4,3 +4,4 @@ python/.DS_Store
 python/__pycache__/
 .DS_Store
 python/venv/
+python/*.xc*
