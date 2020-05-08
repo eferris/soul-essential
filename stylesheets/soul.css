@@ -209,6 +209,10 @@ nav a:hover {
   width: 50%;
 }
 
+#about > p {
+  margin-bottom: 24px;
+}
+
 .about-section {
   display: flex;
 }
