@@ -40,7 +40,7 @@ p {
 }
 
 section {
-  padding: 64px 160px;
+  padding: 64px 13%;
   width: 100%;
 }
 
@@ -461,6 +461,12 @@ footer p {
 
 @media (max-width: 1024px) {
   section {
-    padding: 64px 100px;
+    padding: 64px 10%;
+  }
+}
+
+@media (max-width: 800px) {
+  section {
+    padding: 64px 6%;
   }
 }
