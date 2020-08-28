@@ -272,6 +272,7 @@ nav a:hover {
 .show-schedule {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .show-schedule h6 {
@@ -468,5 +469,10 @@ footer p {
 @media (max-width: 800px) {
   section {
     padding: 64px 6%;
+  }
+
+  .videos {
+    grid-template-columns: 1fr;
+    grid-gap: 64px;
   }
 }
