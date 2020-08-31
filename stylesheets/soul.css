@@ -403,9 +403,9 @@ nav a:hover {
 }
 
 .social-icons {
-  width: 200px;
+  /* width: 200px; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .social-icons button {
@@ -416,6 +416,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 6px;
 }
 
 .social-icons i {
