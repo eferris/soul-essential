@@ -403,9 +403,7 @@ nav a:hover {
 }
 
 .social-icons {
-  /* width: 200px; */
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .social-icons button {
