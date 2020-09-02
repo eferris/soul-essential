@@ -208,29 +208,38 @@ nav a:hover {
   align-items: center;
 }
 
-.about-section img {
+/* .about-section img {
   object-fit: cover;
   height: 100%;
   width: 50%;
+} */
+
+#about p {
+  /* margin-bottom: 24px; */
+  text-indent: 1em;
 }
 
-#about > p {
-  margin-bottom: 24px;
-}
-
-.about-section {
+/* .about-section {
   display: flex;
-}
+} */
 
-.about-text {
+/* .about-text {
   margin-left: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+} */
+
+#about .band-member {
+  margin: 1em 0;
+}
+
+#about .band-member-name {
+  margin: 0.25em 0;
 }
 
 #about button {
-  margin-top: 48px;
+  /* margin-top: 48px; */
 }
 
 /***************************/
@@ -389,7 +398,7 @@ nav a:hover {
   font-size: 0.8rem;
 }
 
-.phone-num {
+.contact-details {
   margin-bottom: 24px;
   /* UNCOMMENT MARGIN BELOW WHEN CONTACT FORM IS BACK IN */
   /* margin: 12px 0 24px 0; */
@@ -398,7 +407,7 @@ nav a:hover {
   align-items: center;
 }
 
-.phone-num h5 {
+.contact-details h5 {
   margin-top: 12px;
 }
 
