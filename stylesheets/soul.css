@@ -10,12 +10,17 @@
   --dark-gray: #181818;
   --main-trim: purple;
   --main-comp: rgb(20, 20, 20);
-  font-size: 22px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: calc(16px + 0.2 * ((100vw - 320px) / 680));
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 body {
@@ -68,7 +73,7 @@ section {
   border-radius: 4px;
   background: black;
   color: white;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   padding: 4px 12px;
   transition: all 0.05s ease-in-out;
 }
@@ -173,7 +178,7 @@ nav a:hover {
 }
 
 .banner-text h2 {
-  font-size: 3em;
+  font-size: 3rem;
   margin: 0 auto;
 }
 
@@ -278,18 +283,18 @@ nav a:hover {
 .show-schedule h6 {
   color: black;
   margin-right: auto;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 .show-schedule p {
   color: black;
   margin-right: auto;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 .show-venue {
   flex-basis: 40%;
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 .show-venue h6 {
@@ -366,7 +371,7 @@ nav a:hover {
   border-radius: 4px;
   padding: 4px 8px;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 #contact .form-section input {
@@ -381,7 +386,7 @@ nav a:hover {
   border-radius: 4px;
   padding: 4px 8px;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 .phone-num {
@@ -398,9 +403,7 @@ nav a:hover {
 }
 
 .social-icons {
-  width: 200px;
   display: flex;
-  justify-content: space-between;
 }
 
 .social-icons button {
@@ -411,10 +414,11 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 6px;
 }
 
 .social-icons i {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: white;
 }
 
