@@ -230,8 +230,12 @@ nav a:hover {
   justify-content: space-around;
 } */
 
-#about .band-member {
-  margin: 1em 0;
+#about .band-members {
+  margin: 2em 0;
+}
+
+#about .band-member:not(:last-child) {
+  margin-bottom: 1em;
 }
 
 #about .band-member-name {
@@ -239,7 +243,7 @@ nav a:hover {
 }
 
 #about button {
-  /* margin-top: 48px; */
+  margin-top: 1em;
 }
 
 /***************************/
