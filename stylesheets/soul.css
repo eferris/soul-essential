@@ -209,27 +209,9 @@ nav a:hover {
   align-items: center;
 }
 
-/* .about-section img {
-  object-fit: cover;
-  height: 100%;
-  width: 50%;
-} */
-
 #about p {
-  /* margin-bottom: 24px; */
   text-indent: 1em;
 }
-
-/* .about-section {
-  display: flex;
-} */
-
-/* .about-text {
-  margin-left: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-} */
 
 #about .band-members {
   margin: 2em 0;
