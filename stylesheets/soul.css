@@ -352,43 +352,8 @@ nav a:hover {
   background-position: center;
 }
 
-#contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#contact .form-section {
-  display: flex;
-}
-
-#contact form input {
-  border: none;
-  border-radius: 4px;
-  padding: 4px 8px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.8rem;
-}
-
-#contact .form-section input {
-  width: 100%;
-  margin: 0 8px 12px 8px;
-}
-
-#contact .form-section textarea {
-  width: 100%;
-  margin: 0 8px 24px 8px;
-  border: none;
-  border-radius: 4px;
-  padding: 4px 8px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.8rem;
-}
-
 .contact-details {
   margin-bottom: 24px;
-  /* UNCOMMENT MARGIN BELOW WHEN CONTACT FORM IS BACK IN */
-  /* margin: 12px 0 24px 0; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,6 +361,10 @@ nav a:hover {
 
 .contact-details h5 {
   margin-top: 12px;
+}
+
+.contact-cta {
+  margin-bottom: 2em;
 }
 
 .social-icons {
@@ -474,5 +443,15 @@ footer p {
   .videos {
     grid-template-columns: 1fr;
     grid-gap: 64px;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .calendar-shows li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
