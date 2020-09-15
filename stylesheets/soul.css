@@ -276,7 +276,6 @@ nav a:hover {
 }
 
 .show-schedule {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   grid-area: schedule;
@@ -456,7 +455,6 @@ footer p {
 
 @media (max-width: 650px) {
   .calendar-shows li {
-    padding: 8px 12px;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "venue"
@@ -468,6 +466,10 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .show-venue {
+    text-align: center;
   }
 
   .show-schedule h6 {
