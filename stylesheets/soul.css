@@ -97,6 +97,10 @@ section {
   color: black;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 /***************************/
 /********* HEADER **********/
 /***************************/
@@ -262,8 +266,7 @@ nav a:hover {
   padding: 12px 24px;
   display: grid;
   grid-template-columns: 2fr 3fr 1fr;
-  grid-template-areas: 
-  "schedule venue location";
+  grid-template-areas: "schedule venue location";
   grid-gap: 16px;
 }
 
@@ -453,10 +456,25 @@ footer p {
 
 @media (max-width: 650px) {
   .calendar-shows li {
+    padding: 8px 12px;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "venue"
     "schedule"
     "location";
+  }
+
+  .calendar-shows li div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .show-schedule h6 {
+    margin-right: 0;
+  }
+
+  .show-schedule p {
+    margin-right: 0;
   }
 }
