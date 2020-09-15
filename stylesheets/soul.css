@@ -455,6 +455,10 @@ footer p {
 }
 
 @media (max-width: 650px) {
+  h4 {
+    font-size: 1.2rem;
+  }
+
   nav ul{
     align-items: center;
     flex-direction: column;
