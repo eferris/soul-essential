@@ -266,7 +266,7 @@ nav a:hover {
   border-radius: 4px;
   padding: 12px 24px;
   display: grid;
-  grid-template-columns: 2fr 3fr 1fr;
+  grid-template-columns: 1.5fr 3fr 1fr;
   grid-template-areas: "schedule venue location";
   grid-gap: 16px;
 }
