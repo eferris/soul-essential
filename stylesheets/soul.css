@@ -183,7 +183,7 @@ nav a:hover {
 }
 
 .banner-text h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0 auto;
 }
 
@@ -458,6 +458,10 @@ footer p {
   nav ul{
     align-items: center;
     flex-direction: column;
+  }
+
+  .banner-text h2 {
+    font-size: 2.5rem;
   }
 
   .calendar-shows li {
