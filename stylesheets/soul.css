@@ -130,6 +130,7 @@ nav {
 
 nav ul {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin: 0;
   list-style: none;
@@ -454,6 +455,11 @@ footer p {
 }
 
 @media (max-width: 650px) {
+  nav ul{
+    align-items: center;
+    flex-direction: column;
+  }
+
   .calendar-shows li {
     grid-template-columns: 1fr;
     grid-template-areas: 
