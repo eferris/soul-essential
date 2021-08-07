@@ -376,6 +376,7 @@ nav a:hover {
 .contact-cta {
   margin-bottom: 2em;
   max-width: 730px;
+  text-align: center;
 }
 
 .social-icons {
@@ -434,6 +435,7 @@ nav a:hover {
   margin: 0 1rem;
   padding: 4px 12px;
   transition: all 0.05s ease-in-out;
+  white-space: nowrap;
 }
 
 .payment-option:hover {
