@@ -331,6 +331,13 @@ nav a:hover {
   width: 100%;
 }
 
+.img-container {
+  padding-top: 26.25%;
+  position: relative;
+  border: 8px solid black;
+}
+
+
 .iframe-container {
   padding-top: 56.25%;
   position: relative;
