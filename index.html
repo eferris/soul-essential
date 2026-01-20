@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
+
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Soul Essential</title>
@@ -36,9 +36,447 @@
   <!-- JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-</head>
+  <!--  <meta charset="UTF-8">
+    <title>Mo Better Music</title>  -->
 
+    <style>
+        /* CSS to hide the product pages initially */
+        #receipts-page {
+            display: none; /* Crucial: Start hidden */
+            border: 2px solid blue;
+            padding: 20px;
+        }
+        #sounds-page {
+            display: none; /* Crucial: Start hidden */
+            border: 2px solid blue;
+            padding: 20px;
+        }
+        #soulessential-page {
+            display: none; /* Crucial: Start hidden */
+            border: 2px solid blue;
+            padding: 20px;
+        }
+        #main-page {
+            border: 2px solid white;
+            padding: 30px;
+        }
+    </style>
+</head>
 <body>
+
+    <div id="main-page">
+
+        <h1>Welcome to Mo Better Music!</h1>
+        <h3>Select the Product you are interested in.</h3>
+        <button class="btn-soul-light-lg" onclick="goToSoulEssentialPage()">Soul Essential</button>
+        <button class="btn-soul-light-lg" onclick="goToReceiptsPage()">The Receipts</button>
+        <button class="btn-soul-light-lg" onclick="goToSoundsPage()">Sounds Nice & Easy</button>
+
+  <!-- MEDIA -- VIDEOS AND PHOTOS --> 
+  <section id="market-top">
+
+    <!-- POSTERS --> 
+    <div class="videos-top">
+ 
+      <div class="img-container">
+          <img class="d-block w-100" src="images/posters/Va-Bene.png" alt="Amy and eric head shot">
+      </div>
+
+      <div class="img-container">
+          <img class="d-block w-100" src="images/posters/UNION.png" alt="Amy and eric head shot">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER  -->
+  <footer>
+    <p>
+      <span>Copyright © 2026 Red Haired Lion Inc - All Rights Reserved.</span>
+    </p>
+  </footer>
+
+
+    </div>
+
+
+<!--   SOUNDS   -->
+
+    <div id="sounds-page">
+      <!--  <h2>Sounds Nice & Easy</h2>
+        <p>This is the Sounds Page.</p>  -->
+
+        <button class="btn-soul-light-lg" onclick="returnToMainPage()">Return to Main Page</button>
+  <!-- HEADER -->
+  <header>
+<!--    <img src="../images/logo/soul-essential-logo.png" alt="Soul Essential Logo">  -->
+    <!-- NAV -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+          <a href="#calendar">Venues</a>
+        </li>
+        <li>
+          <a href="#media">Media</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- BANNER -->
+  <div class="banner">
+    <div class="banner-gradient"></div>
+    <div class="banner-text">
+      <h2 class="section-header"><span class="inline-block"> Easy </span><br><span class="inline-block"> Listening </span></h2>
+    </div>
+    <!-- BOOTSTRAP CAROUSEL -->
+    <div id="carousel-slides" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/carousel/young.jpeg" alt="Eric">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/carousel/IMG_0436.JPG" alt="Eric">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/carousel/eric-standing.JPG" alt="Eric">
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="band-members">
+      <div class="band-member">
+      <h3 class="band-member-name">Sounds Nice & Easy</h3>
+      </div>
+    </div>
+        <p><strong>Sounds Nice & Easy</strong> celebrates all the music from the American Songbook plus some of your favorite Latin sounds.  This is a solo act that offers a wide variety of songs through a voice and a guitar.  This act features intimacy, listening. sing-along and background music for small venue environments. When budget allows a second musician can be added.</p>
+
+    <a href="#contact">
+      <button class="btn-soul-light-lg">Book Now</button>
+    </a>
+  </section>
+
+
+  <!-- MEDIA -- VIDEOS AND PHOTOS -->
+  <section id="media">
+    <!-- <h3 class="section-header">Check us out!</h3>  -->
+    <!-- VIDEOS -->
+    <div class="videos">
+
+      <div class="iframe-container-sounds">
+         <iframe width="315" height="576" src="https://www.youtube.com/embed/RpdV_TQ4WP0" title="sounds nice and easy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </iframe>      
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h3 id="s-contact-info" class="section-header">Hit Me!</h3>
+    <div class="contact-details">
+      <p class="contact-cta">Planning an event? I play Festivals, Venues, Weddings, and Corporate Events. I ensure that your musical event will be stress-free and well-organized. So sit back, relax and leave this to me!</p>
+      <h4>soundsniceandeasy@gmail.com</h4>
+      <h6>or</h6>
+      <h5>+1.213.709.7649</h5>  
+    </div>
+    <h3 class="section-header">I want to hear from you!</h3>
+    <div class="social-icons">
+      <h6>Patroen</h6>
+      <a href="https://www.patreon.com/LivewireMusic/" target="_blank">
+        <button class="iconify Patreon">
+          <i class="iconify" data-icon="logos:patreon">CashApp</i>
+        </button>
+      </a>
+      <h6>Venmo</h6>
+      <a href="https:/venmo.com/LivewireMusic/" target="_blank">
+        <button class="iconify Venmo">
+          <i class="iconify" data-icon="ion:logo-venmo">Venmo</i>
+        </button>
+      </a>
+      <h6>Facebook</h6>
+      <a href="https://www.facebook.com/soundsniceandeasy/" target="_blank">
+        <button class="facebook">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+      </a>
+      <h6>Youtube</h6>
+      <a href="https://www.youtube.com/@MoBetterMusic-Entertainment/" target="_blank">
+        <button class="youtube">
+          <i class="fab fa-youtube"></i>
+        </button>
+      </a>
+      <h6>Instagram</h6>
+      <a href="https://www.instagram.com/soundsniceandeasy/" target="_blank">
+        <button class="instagram">
+          <i class="fab fa-instagram"></i>
+        </button>
+      </a>
+    </div>
+  </section>
+
+
+
+  <!-- VENUES -->
+  <section id="calendar">
+    <h3 class="section-header">Some of our Venues</h3>
+    <ul class="calendar-shows">
+            
+ 
+      <li>
+        <!-- <div class="show-schedule">
+          <h6>Saturday, <span class="inline-block">Dec 30th, 2023</span></h6>
+          <p>9:00pm - 11:30pm</p>
+        </div> -->
+        <div class="show-venue">
+          <h6><span class="inline-block">La Fonda del Sol Scottsdale AZ</span></h6>
+        </div>
+        <div class="show-location">
+          <a href="https://maps.app.goo.gl/6xLC6YoVDhye7ZXu7" target="_blank">
+            <button class="btn-soul-dark">Get Directions</button>
+          </a>
+        </div>
+      </li>   
+
+    </ul>
+
+  </section>
+
+
+
+
+  <!-- FOOTER  -->
+  <footer>
+    <p>
+      <span>Copyright © 2026 Red Haired Lion Inc - All Rights Reserved.</span>
+    </p>
+  </footer>
+
+  <script>
+    // SMOOTH SCROLLING
+    const navLinks = document.querySelectorAll('nav a[href*="#"')
+    navLinks.forEach(navLink => {
+      $(navLink).click(() => {
+        $('html,body').animate({
+          scrollTop: $(navLink.getAttribute("href")).offset().top
+        },
+          500);
+      });
+    });
+  </script>
+
+  <button  class="btn-soul-light-lg" onclick="returnToMainPage()">Return to Main Page</button>
+
+
+    </div>
+
+
+  <!--   RECEIPTS  -->
+
+    <div id="receipts-page">
+
+        <button class="btn-soul-light-lg" onclick="returnToMainPage()">Return to Main Page</button>
+  <!-- HEADER -->
+  <header>
+    <img src="../images/logo/thereceipts-logotype-inline-flat.png" alt="The Receipts Logo">  
+    <!-- NAV -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#about-tr">About</a>
+        </li>
+        <li>
+          <a href="#calendar-tr">Venues</a>
+        </li>
+        <li>
+          <a href="#media-tr">Media</a>
+        </li>
+        <li>
+          <a href="#contact-tr">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- BANNER -->
+  <div class="banner">
+    <div class="banner-gradient"></div>
+    <div class="banner-text">
+<!--
+      <h2 class="section-header"><span class="inline-block"> The </span><br><span class="inline-block"> Receipts </span></h2>
+-->
+    </div>
+    <!-- BOOTSTRAP CAROUSEL -->
+    <div id="carousel-slides" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/carousel/Soul_Essential_025.jpg" alt="Amy and Eric">
+        </div>
+<!--
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/carousel/IMG_0436.JPG" alt="Eric">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/carousel/eric-standing.JPG" alt="Eric">
+        </div>
+-->
+    </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about-tr">
+    <div class="band-members">
+      <div class="band-member">
+      <!-- <h3 class="band-member-name">The Receipts</h3>  -->
+        <p><strong>The Receipts</strong> is the party band eveyone looks for on Saturday night to enjoy classic music we all can sing with. This group celebrates all the music from the classic top 40 Americana Songbook plus some of your favorite Blues sounds. The group also features a tribute set of the great Carlos Santana.  This group is available for all venues, festivals and concerts as a small 5 person unit up to 11 people with horns and vocal background singers.</p> 
+      </div>
+    </div>
+
+    <a href="#contact-tr">
+      <button class="btn-soul-light-lg">Book Now</button>
+    </a>
+  </section>
+
+
+  <!-- MEDIA -- VIDEOS AND PHOTOS -->
+  <section id="media-tr">
+    <!-- <h3 class="section-header">Check us out!</h3>  -->
+    <!-- VIDEOS -->
+    <div class="videos">
+
+      <div class="iframe-container">
+
+         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/A0bkXFWXnL4?si=1q69AHT6GLCt7gXN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="iframe-container">
+         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0Diahg4iJac?si=v9g6RCf8BiYArd-F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact-tr">
+    <h3 id="s-contact-info" class="section-header">Hit Me!</h3>
+    <div class="contact-details">
+      <p class="contact-cta">We ensure that your musical event will be stress-free and well-organized. So sit back, relax and leave this to us!</p>
+      <h4>mobettermusician@gmail.com</h4>
+      <h6>or</h6>
+      <h5>+1.213.709.7649</h5>  
+    </div>
+    <h3 class="section-header">I want to hear from you!</h3>
+    <div class="social-icons">
+      <h6>Patroen</h6>
+      <a href="https://www.patreon.com/LivewireMusic/" target="_blank">
+        <button class="iconify Patreon">
+          <i class="iconify" data-icon="logos:patreon">CashApp</i>
+        </button>
+      </a>
+      <h6>Venmo</h6>
+      <a href="https:/venmo.com/LivewireMusic/" target="_blank">
+        <button class="iconify Venmo">
+          <i class="iconify" data-icon="ion:logo-venmo">Venmo</i>
+        </button>
+      </a>
+      <h6>Facebook</h6>
+      <a href="https://www.facebook.com/TheReceiptsOfficial/" target="_blank">
+        <button class="facebook">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+      </a>
+      <h6>Youtube</h6>
+      <a href="https://www.youtube.com/@TheReceiptsOfficial/" target="_blank">
+        <button class="youtube">
+          <i class="fab fa-youtube"></i>
+        </button>
+      </a>
+      <h6>Instagram</h6>
+      <a href="https://www.instagram.com/TheReceipts.Official/" target="_blank">
+        <button class="instagram">
+          <i class="fab fa-instagram"></i>
+        </button>
+      </a>
+    </div>
+  </section>
+
+
+
+  <!-- VENUES -->
+  <section id="calendar-tr">
+    <h3 class="section-header">Some of our Venues</h3>
+    <ul class="calendar-shows">
+
+      <li>
+        <!-- <div class="show-schedule">
+          <h6>Saturday, <span class="inline-block">Dec 30th, 2023</span></h6>
+          <p>9:00pm - 11:30pm</p>
+        </div> -->
+        <div class="show-venue">
+          <h6><span class="inline-block">Seminole Hard Rock Casino Miami FL</span></h6>
+        </div>
+        <div class="show-location">
+          <a href="https://maps.app.goo.gl/ENKY2FtBGAjkVuwf6" target="_blank">
+            <button class="btn-soul-dark">Get Directions</button>
+          </a>
+        </div>
+      </li>   
+      
+    </ul>
+
+  </section>
+
+
+
+  <!-- FOOTER  -->
+  <footer>
+    <p>
+      <span>Copyright © 2026 Red Haired Lion Inc - All Rights Reserved.</span>
+    </p>
+  </footer>
+
+  <script>
+    // SMOOTH SCROLLING
+    const navLinkstr = document.querySelectorAll('nav a[href*="#"')
+    navLinkstr.forEach(navLink => {
+      $(navLink).click(() => {
+        $('html,body').animate({
+          scrollTop: $(navLink.getAttribute("href")).offset().top
+        },
+          500);
+      });
+    });
+  </script>
+
+  <button  class="btn-soul-light-lg" onclick="returnToMainPage()">Return to Main Page</button>
+
+
+    </div>
+
+
+<!--   SOUL   -->
+
+    <div id="soulessential-page">
+      <!--  <h2>Soul Essential</h2>
+        <p>This is the Soul Essential Page.</p>  -->
+        <button class="btn-soul-light-lg" onclick="returnToMainPage()">Return to Main Page</button>
+
+
+
   <!-- HEADER -->
   <header>
     <img src="images/logo/soul-essential-logo.png" alt="Soul Essential Logo">
@@ -46,19 +484,16 @@
     <nav>
       <ul>
         <li>
-          <a href="#about">About</a>
+          <a href="#about-se">About</a>
         </li>
         <li>
-          <a href="#calendar">Venues</a>
+          <a href="#calendar-se">Venues</a>
         </li>
         <li>
-          <a href="#media">Media</a>
+          <a href="#media-se">Media</a>
         </li>
         <li>
-          <a href="#market">Marketing</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact-se">Contact</a>
         </li>
       </ul>
     </nav>
@@ -93,13 +528,7 @@
           <img class="d-block w-100" src="images/carousel/Soul_Essential_013.jpg" alt="Troy Cov">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/carousel/IMG_2133.jpg" alt="Amy and Eric with a cool Pork Pie hat">
-        </div>
-        <div class="carousel-item">
           <img class="d-block w-100" src="images/carousel/Soul_Essential_051.jpg" alt="Group Shot at Metal Fencing">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/carousel/Soul_Essential_025.jpg" alt="Eric in front of a cool painted brick wall">
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="images/carousel/Soul_Essential_019.jpg" alt="Group Shot miinus Jamar">
@@ -109,7 +538,7 @@
   </div>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about-se">
     <p><strong>Soul Essential</strong> celebrates all the music that changed our lives - that remind us of that first
       summer we heard those songs together. From 
       70s New York funk to a potpourri of Chicago Blues and R&B, Soul Essential takes you down memory lane with a
@@ -143,14 +572,14 @@
         as well as the Philly Soul Artist, Barbara Mason.</p>
       </div>      
     </div>
-    <a href="#contact">
+    <a href="#contact-se">
       <button class="btn-soul-light-lg">Book Now</button>
     </a>
   </section>
 
 
   <!-- MEDIA -- VIDEOS AND PHOTOS -->
-  <section id="media">
+  <section id="media-se">
     <!-- <h3 class="section-header">Check us out!</h3>  -->
     <!-- VIDEOS -->
     <div class="videos">
@@ -180,11 +609,10 @@
 
     </div>
   </section>
-  <--  </section>  -->
 
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section id="contact-se">
     <h3 id="s-contact-info" class="section-header">Hit Me!</h3>
     <div class="contact-details">
       <p class="contact-cta">Planning an event? We play Festivals, Venues, Weddings, and Corporate Events. We ensure that your musical event will be stress-free and well-organized. So sit back, relax and leave this to us!</p>
@@ -231,12 +659,10 @@
 
 
   <!-- VENUES -->
-  <section id="calendar">
+  <section id="calendar-se">
     <h3 class="section-header">Some of Our Venues</h3>
     <ul class="calendar-shows">
   
-
-
       <li>
         <!-- <div class="show-schedule">
           <h6>Saturday, <span class="inline-block">Dec 30th, 2023</span></h6>
@@ -308,25 +734,23 @@
       </li>
 
 
-
       <li>
         <!-- <div class="show-schedule">
-          <h6>Sunday, <span class="inline-block">Sep 27th, 2023</span></h6>
-          <!-- LIMIT MONTH TO 3 CHARACTERS
-          TO FIT INSIDE CONTAINER
-          <p>6:00pm - 9:00pm</p>
-        </div>  -->
+          <h6>Saturday, <span class="inline-block">Dec 30th, 2023</span></h6>
+          <p>9:00pm - 11:30pm</p>
+        </div> -->
         <div class="show-venue">
-          <h6><span class="inline-block">Sue and Jerrys Trading Post Oracle AZ</span></h6>
+          <h6><span class="inline-block">The Century Room Tucson AZ</span></h6>
         </div>
         <div class="show-location">
-
-            
-          <a href="https://goo.gl/maps/pdTeYYDJ8TwS8sU58" target="_blank">
+          <a href="https://goo.gl/maps/HpJEHMbKDALpBDxU8" target="_blank">
             <button class="btn-soul-dark">Get Directions</button>
           </a>
         </div>
-      </li>
+      </li>   
+      
+
+
 
       <li>
         <!-- <div class="show-schedule">
@@ -367,75 +791,6 @@
 
       <li>
         <!-- <div class="show-schedule">
-            <h6>Saturday, <span class="inline-block">Oct 13th, 2023</span></h6>
-            <!-- LIMIT MONTH TO 3 CHARACTERS
-            TO FIT INSIDE CONTAINER
-            <p>5:00pm - 8:00pm</p>
-        </div>  -->
-        <div class="show-venue">
-            <h6><span class="inline-block">Comida Park (Food Truck Delight) Tucson AZ</span></h6>
-        </div>
-            <div class="show-location">
-                <a href="https://goo.gl/maps/ppDVC7YjwbmsE7kn8" target="_blank">
-                <button class="btn-soul-dark">Get Directions</button>
-                </a>
-            </div>
-      </li>
-
-
-      <li>
-        <!-- <div class="show-schedule">
-            <h6>Friday, <span class="inline-block">Oct 20th, 2023</span></h6>
-            <!-- LIMIT MONTH TO 3 CHARACTERS
-            TO FIT INSIDE CONTAINER
-            <p>5:00pm - 8:00pm</p>
-        </div>  -->
-        <div class="show-venue">
-            <h6><span class="inline-block">The Frozen Cactus Tucson AZ</span></h6>
-        </div>
-            <div class="show-location">
-                <a href="https://maps.app.goo.gl/Bo8t29FSLAZPPpGV9" target="_blank">
-                <button class="btn-soul-dark">Get Directions</button>
-                </a>
-            </div>
-      </li>
-
-            
-            
-      <li>
-        <!-- <div class="show-schedule">
-            <h6>Saturday, <span class="inline-block">Nov 10th, 2023</span></h6>
-            <p>7:00pm - 10:00pm</p>
-        </div>  -->
-        <div class="show-venue">
-            <h6><span class="inline-block">American Eats Tucson AZ</span></h6>
-        </div>
-            <div class="show-location">
-                <a href="https://maps.app.goo.gl/tMRfPn7fLBx37t8K9" target="_blank">
-                <button class="btn-soul-dark">Get Directions</button>
-                </a>
-            </div>
-      </li>
-
-            
-      <li>
-        <!-- <div class="show-schedule">
-            <h6>Saturday, <span class="inline-block">Nov 11th, 2023</span></h6>
-            <p>8:00pm - 12:00pm</p>
-        </div>  -->
-        <div class="show-venue">
-            <h6><span class="inline-block">On The Rocks Tucson AZ</span></h6>
-        </div>
-            <div class="show-location">
-                <a href="https://maps.app.goo.gl/Zv9Y9cU3m5PrhZdr9" target="_blank">
-                <button class="btn-soul-dark">Get Directions</button>
-                </a>
-            </div>
-      </li>
-
-
-      <li>
-        <!-- <div class="show-schedule">
           <h6>Friday, <span class="inline-block">Dec 9th, 2023</span></h6>
           <p>6:00pm - 9:00pm</p>
         </div>  -->
@@ -465,12 +820,6 @@
             </div>
       </li>
 
-    </ul> 
-
-    <h3 class="section-header" style="margin-top: 48px">Or Catch Our Soul Triage Trio Shows!</h3>
-    <ul class="calendar-shows">
-      
-            
       <li>
         <!-- <div class="show-schedule">
           <h6>Saturday, <span class="inline-block">Sep 8th, 2023</span></h6>
@@ -488,166 +837,25 @@
       </li>
 
             
-      <li>
-        <!-- <div class="show-schedule">
-          <h6>Saturday, <span class="inline-block">Oct 7th, 2023</span></h6>
-          <p>7:00pm - 10:00pm</p>
-        </div>  -->
-        <div class="show-venue">
-          <h6><span class="inline-block">The Jack Rabbit Lounge Tucson AZ</span></h6>
-        </div>
-        
-        <div class="show-location">
-          <a href="https://maps.app.goo.gl/rnBEoY2eK74BsfnW9" target="_blank">
-            <button class="btn-soul-dark">Get Directions</button>
-          </a>
-        </div>
-      </li>
-
-      
-      <li>
-        <!-- <div class="show-schedule">
-          <h6>Saturday, <span class="inline-block">Oct 27th, 2023</span></h6>
-          <p>6:00pm - 9:00pm</p>
-        </div>  --> 
-        <div class="show-venue">
-          <h6><span class="inline-block">Firetruck Brewing Company Tucson AZ</span></h6>
-        </div>
-        
-        <div class="show-location">
-          <a href="https://maps.app.goo.gl/P4cp15dB4DEkSm6X9" target="_blank">
-            <button class="btn-soul-dark">Get Directions</button>
-          </a>
-        </div>
-      </li>
-      
-      
-    </ul>
-
-    
-    <h3 class="section-header" style="margin-top: 48px">Catch Our AfterHours Guest Artist Jazz Performances!</h3>
-    <ul class="calendar-shows">
-      
-      <li>
-        <!--  <div class="show-schedule">
-          <h6>Sunday, <span class="inline-block">Sep 17th, 2023</span></h6>
-          <p>2:00pm - 5:00pm</p>
-        </div> -->
-        <div class="show-venue">
-          <h6><span class="inline-block">Tucson Jazz Society Sunday at Brother Johns Tucson AZ</span></h6>
-        </div>
-        <div class="show-location">
-          <a href="https://g.page/BrotherJohnsBBQ?share" target="_blank">
-            <button class="btn-soul-dark">Get Directions</button>
-          </a>
-        </div>
-      </li>
-
-
-      <li>
-        <!-- <div class="show-schedule">
-          <h6>Saturday, <span class="inline-block">Dec 30th, 2023</span></h6>
-          <p>9:00pm - 11:30pm</p>
-        </div> -->
-        <div class="show-venue">
-          <h6><span class="inline-block">The Century Room Tucson AZ</span></h6>
-        </div>
-        <div class="show-location">
-          <a href="https://goo.gl/maps/HpJEHMbKDALpBDxU8" target="_blank">
-            <button class="btn-soul-dark">Get Directions</button>
-          </a>
-        </div>
-      </li>   
-      
-    </ul>      
-
-    <h3 class="section-header" style="margin-top: 48px">Or Catch Our Livewire Blues Review Shows!</h3>
-    <ul class="calendar-shows">
-      
-
-      <li>
-        <!-- <div class="show-schedule">
-            <h6>Saturday, <span class="inline-block">Oct 21st, 2023</span></h6>
-            <p>7:00pm - 10:00pm</p>
-        </div> -->
-        <div class="show-venue">
-            <h6><span class="inline-block">The Landing Tucson AZ</span></h6>
-        </div>
-            <div class="show-location">
-                <a href="https://maps.app.goo.gl/KYH4Lp2yfuu8bZn17" target="_blank">
-                <button class="btn-soul-dark">Get Directions</button>
-                </a>
-            </div>
-      </li>
 
             
-      <li>
-        <!-- <div class="show-schedule">
-          <h6>Saturday, <span class="inline-block">Jan 7th, 2024</span></h6>
-          <p>5:00pm - 8:00pm</p>
-        </div> -->
-        <div class="show-venue">
-          <h6><span class="inline-block">Club Congress (Patio) Tucson AZ</span></h6>
-        </div>
-        <div class="show-location">
-          <a href="https://goo.gl/maps/HpJEHMbKDALpBDxU8" target="_blank">
-            <button class="btn-soul-dark">Get Directions</button>
-          </a>
-        </div>
-      </li>
-      
-    </ul>
-
-  </section>
-
-
-  <!-- MEDIA -- VIDEOS AND PHOTOS --> 
-  <section id="market">
-    <!-- POSTERS --> 
-    <div class="videos">
-
-      <div class="img-container">
-          <img class="d-block w-100" src="images/posters/We-Ko-Pa.png" alt="Amy and eric head shot">
-      </div>
-
-      <div class="img-container">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/L5RDspE4Zgg?si=aZO4BcQrgwfdKclA" frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-      </div>
- 
-      <div class="img-container">
-          <img class="d-block w-100" src="images/posters/FUNK.png" alt="Amy and eric head shot">
-      </div>
-
-      <div class="img-container">
-          <img class="d-block w-100" src="images/posters/Cliff-Castle-Casino.png" alt="Amy and eric head shot">
-      </div>
-
-      <div class="img-container">
-          <img class="d-block w-100" src="images/posters/Va-Bene.png" alt="Amy and eric head shot">
-      </div>
-
-      <div class="img-container">
-          <img class="d-block w-100" src="images/posters/UNION.png" alt="Amy and eric head shot">
-      </div>
-
-    </div>
+    </ul>      
   </section>
 
 
   <!-- FOOTER  -->
   <footer>
     <p>
-      <span>Copyright © 2024 Red Haired Lion Inc - All Rights Reserved.</span>
+      <span>Copyright © 2026 Red Haired Lion Inc - All Rights Reserved.</span>
     </p>
   </footer>
 
   <script>
     // SMOOTH SCROLLING
-    const navLinks = document.querySelectorAll('nav a[href*="#"')
 
-    navLinks.forEach(navLink => {
+    const navLinksse = document.querySelectorAll('nav a[href*="#"')
+
+    navLinksse.forEach(navLink => {
       $(navLink).click(() => {
         $('html,body').animate({
           scrollTop: $(navLink.getAttribute("href")).offset().top
@@ -656,6 +864,63 @@
       });
     });
   </script>
-</body>
 
+  <button class="btn-soul-light-lg" onclick="returnToMainPage()">Return to Main Page</button>
+
+    </div>
+
+
+<!--  TOP  -->
+
+    <script>
+        // JavaScript functions to handle the page switching
+        
+        
+        /**
+         * Action: Display the Soul Essential Page
+         * Logic: Hides the main div and shows the sub div.
+         */
+        function goToSoulEssentialPage() {
+            document.getElementById('main-page').style.display = 'none';
+            document.getElementById('soulessential-page').style.display = 'block';
+            document.getElementById('sounds-page').style.display = 'none';
+            document.getElementById('receipts-page').style.display = 'none';
+        }
+
+        /**
+         * Action: Display the Soul Essential Page
+         * Logic: Hides the main div and shows the sub div.
+         */
+        function goToReceiptsPage() {
+            document.getElementById('main-page').style.display = 'none';
+            document.getElementById('soulessential-page').style.display = 'none';
+            document.getElementById('sounds-page').style.display = 'none';
+            document.getElementById('receipts-page').style.display = 'block';
+        }
+        
+        /**
+         * Action: Display the Sounds Page
+         * Logic: Hides the main div and shows the sub div.
+         */
+        function goToSoundsPage() {
+            document.getElementById('main-page').style.display = 'none';
+            document.getElementById('soulessential-page').style.display = 'none';
+            document.getElementById('sounds-page').style.display = 'block';
+            document.getElementById('receipts-page').style.display = 'none';
+        }
+
+        /**
+         * Action: Return from the Sub Page on user interaction
+         * Logic: Hides the Sub div and shows the main div.
+         */
+        function returnToMainPage() {
+            document.getElementById('sounds-page').style.display = 'none';
+            document.getElementById('soulessential-page').style.display = 'none';
+            document.getElementById('main-page').style.display = 'block';
+            document.getElementById('receipts-page').style.display = 'none';
+        }
+
+    </script>
+
+</body>
 </html>
