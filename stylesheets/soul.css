@@ -220,19 +220,19 @@ nav a:hover {
   text-indent: 1em;
 }
 
-#about .band-members {
+.band-members {
   margin: 2em 0;
 }
 
-#about .band-member:not(:last-child) {
+.band-member:not(:last-child) {
   margin-bottom: 1em;
 }
 
-#about .band-member-name {
+.band-member-name {
   margin: 0.25em 0;
 }
 
-#about button {
+button {
   margin-top: 2.5em;
 }
 
@@ -331,6 +331,16 @@ nav a:hover {
   width: 100%;
 }
 
+.videos-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 68px;
+  margin-bottom: 46px;
+  width: 100%;
+}
+
+
+
 .img-container {
   padding-top: 26.25%;
   position: relative;
@@ -368,6 +378,36 @@ nav a:hover {
   background-size: cover;
   background-position: center;
 }
+
+#contact-se {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+      45deg,
+      rgba(68, 30, 71, 0.6),
+      rgba(71, 26, 75, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1555201441-7b166836415d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+
+#contact-tr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+      45deg,
+      rgba(68, 30, 71, 0.6),
+      rgba(71, 26, 75, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1555201441-7b166836415d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
 
 .contact-details {
   margin-bottom: 24px;
