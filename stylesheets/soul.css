@@ -45,13 +45,13 @@ p {
 }
 
 section {
-  padding: 64px 13%;
+  padding: 34px 10%;
   width: 100%;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 28px;
   letter-spacing: 0.04em;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
@@ -69,6 +69,7 @@ section {
   color: black;
   border-radius: 4px;
   padding: 8px 24px;
+  font-size: 4.50;
 }
 
 .btn-soul-light-lg:hover {
@@ -210,13 +211,13 @@ nav a:hover {
 /********* ABOUT ***********/
 /***************************/
 
-#about {
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#about p {
+.about p {
   text-indent: 1em;
 }
 
@@ -326,16 +327,25 @@ button {
 .videos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 48px;
-  margin-bottom: 56px;
+  grid-gap: 68px;
+  margin-bottom: 46px;
+  width: 100%;
+}
+
+.videos-sounds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 68px;
+  margin-bottom: 46px;
   width: 100%;
 }
 
 .videos-top {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 68px;
-  margin-bottom: 46px;
+  grid-gap: 38px;
+  margin-bottom: 16px;
+  margin-bottom: 16px;
   width: 100%;
 }
 
@@ -347,6 +357,19 @@ button {
   border: 8px solid black;
 }
 
+
+.iframe-container-sounds {
+  padding-top: 0%;
+  position: relative;
+  border: 8px solid white;
+}
+
+.iframe-container-sounds iframe {
+  border: 0;
+  left: 0;
+  position: relative;
+  top: 0;
+}
 
 .iframe-container {
   padding-top: 56.25%;
